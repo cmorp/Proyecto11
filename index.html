@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,500,600,700&display=swap" rel="stylesheet">
+    <title>Gorros</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="product-card">
+
+            <img src="assets/img/gorros.jpg" alt="" class="Gorros coloridos">
+
+            <h2 class="title">GORRO BEANIE</h2>
+
+            <div class="price-button">
+            <h3> Precio: $<span class="price">4.990</span></h3>
+            </div>
+
+            <div class="color-quantity">
+
+                <input type="quantity" class="select-quantity" min="1" value="1">
+                <select name="color" id="color" class="select-color">
+                    <option value="#ffeace">Crema</option>
+                    <option value="#f6c227">Mostaza</option>
+                    <option value="#ffbbd0">Rosa</option>
+                    <option value="#46fbe6">Calipso</option>
+                    <option value="#fb6429">Naranja</option>
+                </select>
+            </div>
+
+            <button class="calculate">Calcular Total</button>
+
+        </div> 
+
+
+
+        <div class="my-cart">
+            <h3>Mi Carrito:</h3>
+            <div class="total-price">
+                Total: <span class="final-price">$0</span>
+            </div>
+
+            <div class="total-quantity">
+                Cantidad: <span class="final-quantity">0</span>
+            </div>
+
+            <div class="final-color">
+                Color: <span class="final-selected-color"></span>
+                <div class="color-swatch" style="background-color: transparent">
+                </div>
+            </div>
+
+
+            <div class="cart-button">
+                <button class="shop">¡Comprar!</button>
+            </div>
+
+        </div>
+
+    </div> 
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
