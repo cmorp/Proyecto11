@@ -14,7 +14,7 @@ cartFinalColor = document.querySelector('.color-swatch');
 calculate.addEventListener('click',() => {
 
     //Assigning variables into function scope - then reformating
-    let total = quantityInput.value * priceInput.textContent.split(".").join("");
+    let total = quantityInput.value * Number(priceInput.textContent)*1000;
     let totalLocaleString = total.toLocaleString("es-CL", {style: "decimal", currency: "CLP", miniumFractionDigits: 0 });
 
     //Replacing contents to print
